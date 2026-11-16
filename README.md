@@ -80,7 +80,8 @@ What that shows:
   in every kind of maze, but once there is more than one route it takes a
   detour: 9,894 steps instead of 2,563 in the `schleifen` mazes.
 - **Dijkstra finds what BFS finds, more slowly.** Every step costs the same
-  here, so the two visit the same cells and return the same route length. The
+  here, so the two visit almost the same number of cells and always return the
+  same route length. The
   priority queue is pure overhead, about 2 to 6 times slower.
 - **Visiting fewer cells is not the same as being faster.** In the `schleifen`
   mazes A\* visits fewer cells than BFS and still takes ten times as long,
